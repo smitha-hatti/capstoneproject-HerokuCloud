@@ -89,7 +89,7 @@ public class AuthenticationController {
                         Email to = new Email(user.getEmail());
                         Content content = new Content("text/plain", " Your new password is: " + passwordNew);
                         Mail mail = new Mail(from, subject, to, content);
-                        String api_key = "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";
+                        String api_key = "<SendGrid API Key>";
                         SendGrid sg = new SendGrid(api_key);
 
                         Request request = new Request();

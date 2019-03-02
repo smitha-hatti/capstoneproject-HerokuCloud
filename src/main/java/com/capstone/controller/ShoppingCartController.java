@@ -139,7 +139,7 @@ public class ShoppingCartController {
                         Email to = new Email(userEmail);
                         Content content = new Content("text/html", "Your order has been placed. Thank you for shopping with us!!");
                         Mail mail = new Mail(from, subject, to, content);
-                        String api_key = "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";
+                        String api_key = "<SendGrid API KEY>";
                         SendGrid sg = new SendGrid(api_key);
 
                         Request request = new Request();
